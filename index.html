@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة التكبيس</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        h1 { color: #333; }
+        #counter { font-size: 24px; margin: 20px; }
+        button { font-size: 20px; padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>👆 لعبة التكبيس 👆</h1>
+    <p id="counter">0</p>
+    <button onclick="increaseCounter()">🔘 كبس!</button>
+
+    <script>
+        let count = 0;
+        function increaseCounter() {
+            count++;
+            document.getElementById("counter").innerText = count;
+        }
+    </script>
+</body>
+</html>
